@@ -2,7 +2,7 @@ import { StyleSheet } from 'react-native';
 
 import { Text, View } from '@/components/Themed';
 
-export default function ProfileScreen() {
+export default function AnalyticsScreen() {
     return (
         <View style={styles.container}>
             <Text style={styles.title}>Tab Two</Text>
