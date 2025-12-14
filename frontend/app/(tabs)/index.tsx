@@ -1,7 +1,7 @@
-import { Image, StyleSheet, Text, TouchableOpacity } from 'react-native';
-
 import { View } from '@/components/Themed';
 import { ListeningButton } from '@/components/listeningButton';
+import { Feather } from '@expo/vector-icons';
+import { Image, StyleSheet, Text, TouchableOpacity } from 'react-native';
 
 export default function TabOneScreen() {
   return (
@@ -12,7 +12,9 @@ export default function TabOneScreen() {
           <Text style={styles.greeting}>Olá, </Text>
           <Text style={styles.userName}>Daniel</Text>
         </View>
-        <TouchableOpacity style={styles.cameraCircle} />
+        <TouchableOpacity style={styles.cameraCircle}>
+          <Feather name="camera" size={24} color="#FFFFFF" />
+        </TouchableOpacity>
       </View>
       <ListeningButton />
     </View>
@@ -59,7 +61,6 @@ const styles = StyleSheet.create({
     width: 40,
     height: 40,
     borderRadius: 20,
-    backgroundColor: '#333333',
     alignItems: 'center',
     justifyContent: 'center',
   },
